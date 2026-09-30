@@ -1235,10 +1235,6 @@ extern bool (*g_eht_event_notify)(wifi_interface_info_t *interface);
 int platform_set_amsdu_tid(wifi_interface_info_t *interface, uint8_t *amsdu_tid);
 #endif
 
-#if defined(BANANA_PI_PORT) && (HOSTAPD_VERSION >= 211)
-extern void supplicant_event(void *ctx, enum wpa_event_type event,
-     union wpa_event_data *data);
-#endif
 
 platform_pre_init_t     	get_platform_pre_init_fn();
 platform_post_init_t    	get_platform_post_init_fn();
